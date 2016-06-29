@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -16,12 +19,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Bind(R.id.headlineTextView) TextView mHeadlineTextView;
     @Bind(R.id.foodButton) Button mFoodButton;
     @Bind(R.id.drinkButton) Button mDrinkButton;
+    @Bind(R.id.imageView) ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        Picasso.with(this).load(R.drawable.background).fit().centerCrop().into(mImageView);
 
         Typeface santanaFont = Typeface.createFromAsset(getAssets(), "fonts/Santana-Black.ttf");
         mHeadlineTextView.setTypeface(santanaFont);

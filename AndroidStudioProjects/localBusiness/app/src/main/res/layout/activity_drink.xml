@@ -8,18 +8,17 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/drinkBackGround"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/drinkImage"
         android:layout_centerVertical="true"
         android:background="#fbf5dd"
-        android:src="@drawable/background"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Drink Menu"
+        android:text="DRINK MENU"
         android:id="@+id/drinkMenu"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"

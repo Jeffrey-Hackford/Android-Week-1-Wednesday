@@ -8,6 +8,7 @@
         android:label="Starbucks"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/NoActionBarTheme">

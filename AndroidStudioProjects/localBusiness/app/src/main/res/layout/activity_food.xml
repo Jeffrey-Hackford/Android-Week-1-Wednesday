@@ -7,17 +7,17 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/foodImage"
-        android:src="@drawable/background"
         android:background="#fbf5dd"
-        android:adjustViewBounds="false" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food Menu"
+        android:text="FOOD MENU"
         android:id="@+id/foodTextView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -26,8 +26,8 @@
         android:textColor="#4f7249" />
 
     <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/foodListView"
         android:layout_below="@+id/foodTextView"
         android:layout_centerHorizontal="true" />
